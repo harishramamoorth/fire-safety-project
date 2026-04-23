@@ -1,0 +1,41 @@
+.sectors {
+  background: var(--white);
+}
+
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.sector-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid #eee;
+  cursor: pointer;
+}
+
+.sector-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+  border-color: var(--primary);
+}
+
+.sector-icon {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.sector-card h3 {
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+
+.sector-card p {
+  color: var(--gray);
+  line-height: 1.6;
+}
