@@ -119,6 +119,7 @@ function App() {
           <Route path="/products/purple-k" element={<PurpleK />} />
 
           {/* Suppression Systems */}
+          
           <Route path="/products/fm200-system" element={<FM200System />} />
           <Route path="/products/novec-1230-system" element={<Novec1230System />} />
           <Route path="/products/kitchen-suppression" element={<KitchenSuppression />} />
