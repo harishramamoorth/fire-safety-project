@@ -92,13 +92,13 @@ const AFFFoamConcentrate = () => {
             <div className="image-gallery">
               <div className="main-image">
                 <img 
-                  src="/assets/images/abc-powder-fire-extinguisher-01_1.jpg" 
+                  src="/assets/images/firefighting-foam.jpg" 
                   alt="AFFF Foam Concentrate"
                 />
               </div>
               <div className="thumbnails">
                 <div className="thumb active">
-                  <img src="/assets/images/abc-powder-fire-extinguisher-01_1.jpg" alt="Main" />
+                  <img src="/assets/images/firefighting-foam.jpg" alt="Main" />
                 </div>
                 <div className="thumb">
                   <div className="thumb-placeholder">+</div>
@@ -259,11 +259,11 @@ const AFFFoamConcentrate = () => {
         </div>
       </div>
 
-      {/* Embedded CSS */}
+      {/* Embedded CSS – Green & White Theme */}
       <style jsx>{`
         .product-page-enhanced {
           font-family: 'Inter', 'Poppins', sans-serif;
-          background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+          background: var(--white);
           padding: 40px 0 80px;
         }
 
@@ -277,14 +277,14 @@ const AFFFoamConcentrate = () => {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          color: #1e40af;
+          color: var(--secondary);
           text-decoration: none;
           font-weight: 500;
           margin-bottom: 32px;
           transition: 0.2s;
         }
         .back-link-enhanced:hover {
-          color: #dc2626;
+          color: var(--primary);
           transform: translateX(-4px);
         }
 
@@ -292,8 +292,8 @@ const AFFFoamConcentrate = () => {
           margin-bottom: 40px;
         }
         .hero-badge {
-          background: #dc2626;
-          color: white;
+          background: var(--primary);
+          color: var(--white);
           display: inline-block;
           padding: 6px 16px;
           border-radius: 30px;
@@ -304,12 +304,12 @@ const AFFFoamConcentrate = () => {
         .hero-content h1 {
           font-size: 2.8rem;
           font-weight: 700;
-          color: #0f172a;
+          color: var(--secondary);
           margin-bottom: 12px;
         }
         .hero-subtitle {
           font-size: 1.2rem;
-          color: #475569;
+          color: var(--gray);
           margin-bottom: 12px;
         }
         .hero-rating {
@@ -324,7 +324,7 @@ const AFFFoamConcentrate = () => {
           letter-spacing: 2px;
         }
         .rating-count {
-          color: #64748b;
+          color: var(--gray);
           font-size: 0.9rem;
         }
 
@@ -342,9 +342,9 @@ const AFFFoamConcentrate = () => {
         }
 
         .image-gallery {
-          background: #ffffff;
+          background: var(--white);
           border-radius: 24px;
-          box-shadow: 0 20px 35px -10px rgba(0,0,0,0.1);
+          box-shadow: 0 20px 35px -10px rgba(0,0,0,0.08);
           overflow: hidden;
           padding: 20px;
         }
@@ -370,7 +370,7 @@ const AFFFoamConcentrate = () => {
           transition: 0.2s;
         }
         .thumb.active {
-          border-color: #dc2626;
+          border-color: var(--primary);
         }
         .thumb img {
           width: 100%;
@@ -380,41 +380,41 @@ const AFFFoamConcentrate = () => {
         .thumb-placeholder {
           width: 100%;
           height: 100%;
-          background: #e2e8f0;
+          background: var(--light-gray);
           display: flex;
           align-items: center;
           justify-content: center;
           font-size: 2rem;
-          color: #94a3b8;
+          color: var(--gray);
         }
 
         .product-info-card {
-          background: white;
+          background: var(--white);
           border-radius: 24px;
           padding: 32px;
-          box-shadow: 0 20px 35px -10px rgba(0,0,0,0.1);
+          box-shadow: 0 20px 35px -10px rgba(0,0,0,0.08);
         }
         .price-tag {
           margin-bottom: 24px;
           padding-bottom: 16px;
-          border-bottom: 2px solid #e2e8f0;
+          border-bottom: 2px solid var(--gray-light);
         }
         .price-label {
           font-size: 0.9rem;
-          color: #64748b;
+          color: var(--gray);
           text-transform: uppercase;
           letter-spacing: 1px;
         }
         .price-value {
           font-size: 1.8rem;
           font-weight: 700;
-          color: #dc2626;
+          color: var(--primary);
           display: block;
           margin: 8px 0 4px;
         }
         .price-note {
           font-size: 0.8rem;
-          color: #64748b;
+          color: var(--gray);
         }
         .specs-highlight {
           display: flex;
@@ -423,7 +423,7 @@ const AFFFoamConcentrate = () => {
           margin-bottom: 24px;
         }
         .spec-chip {
-          background: #f1f5f9;
+          background: var(--light-gray);
           padding: 8px 14px;
           border-radius: 40px;
           display: inline-flex;
@@ -432,10 +432,10 @@ const AFFFoamConcentrate = () => {
           font-size: 0.85rem;
         }
         .spec-chip svg {
-          color: #dc2626;
+          color: var(--primary);
         }
         .product-description {
-          color: #334155;
+          color: var(--gray-dark);
           line-height: 1.6;
           margin-bottom: 28px;
         }
@@ -459,35 +459,35 @@ const AFFFoamConcentrate = () => {
           font-size: 0.95rem;
         }
         .btn-primary-large {
-          background: #dc2626;
-          color: white;
+          background: var(--primary);
+          color: var(--white);
         }
         .btn-primary-large:hover {
-          background: #b91c1c;
+          background: var(--primary-dark);
           transform: translateY(-2px);
         }
         .btn-outline-large {
-          border: 2px solid #dc2626;
+          border: 2px solid var(--primary);
           background: transparent;
-          color: #dc2626;
+          color: var(--primary);
         }
         .btn-outline-large:hover {
-          background: #dc2626;
-          color: white;
+          background: var(--primary);
+          color: var(--white);
         }
         .btn-datasheet {
-          background: #f1f5f9;
-          color: #1e293b;
+          background: var(--light-gray);
+          color: var(--dark);
         }
         .btn-datasheet:hover {
-          background: #e2e8f0;
+          background: var(--gray-light);
         }
         .trust-badges {
           display: flex;
           gap: 20px;
           flex-wrap: wrap;
           font-size: 0.85rem;
-          color: #475569;
+          color: var(--gray);
         }
         .trust-badges span {
           display: inline-flex;
@@ -496,7 +496,7 @@ const AFFFoamConcentrate = () => {
         }
 
         .tabs-section {
-          background: white;
+          background: var(--white);
           border-radius: 24px;
           box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
           margin: 48px 0;
@@ -505,9 +505,9 @@ const AFFFoamConcentrate = () => {
         .tabs-header {
           display: flex;
           gap: 8px;
-          background: #f8fafc;
+          background: var(--light-gray);
           padding: 16px 24px 0;
-          border-bottom: 1px solid #e2e8f0;
+          border-bottom: 1px solid var(--gray-light);
         }
         .tab-btn {
           background: none;
@@ -515,14 +515,14 @@ const AFFFoamConcentrate = () => {
           padding: 12px 24px;
           font-size: 1rem;
           font-weight: 600;
-          color: #64748b;
+          color: var(--gray);
           cursor: pointer;
           transition: 0.2s;
           border-bottom: 3px solid transparent;
         }
         .tab-btn.active {
-          color: #dc2626;
-          border-bottom-color: #dc2626;
+          color: var(--primary);
+          border-bottom-color: var(--primary);
         }
         .tab-content {
           padding: 32px;
@@ -536,13 +536,13 @@ const AFFFoamConcentrate = () => {
           display: flex;
           align-items: center;
           gap: 16px;
-          background: #f8fafc;
+          background: var(--light-gray);
           padding: 16px;
           border-radius: 16px;
         }
         .spec-icon {
           font-size: 1.8rem;
-          color: #dc2626;
+          color: var(--primary);
         }
         .spec-info {
           display: flex;
@@ -550,13 +550,13 @@ const AFFFoamConcentrate = () => {
         }
         .spec-label {
           font-size: 0.8rem;
-          color: #64748b;
+          color: var(--gray);
           text-transform: uppercase;
         }
         .spec-value {
           font-size: 1.2rem;
           font-weight: 700;
-          color: #0f172a;
+          color: var(--secondary);
         }
         .feature-list-full {
           list-style: none;
@@ -571,7 +571,7 @@ const AFFFoamConcentrate = () => {
           gap: 12px;
         }
         .check-icon {
-          color: #10b981;
+          color: var(--primary);
           font-size: 1.2rem;
         }
         .applications-grid-full, .certs-grid-full {
@@ -580,7 +580,7 @@ const AFFFoamConcentrate = () => {
           gap: 12px;
         }
         .app-chip, .cert-chip {
-          background: #f1f5f9;
+          background: var(--light-gray);
           padding: 8px 20px;
           border-radius: 40px;
           display: inline-flex;
@@ -590,8 +590,8 @@ const AFFFoamConcentrate = () => {
         }
 
         .maintenance-section-enhanced {
-          background: #fefce8;
-          border-left: 5px solid #eab308;
+          background: var(--primary-lightest);
+          border-left: 5px solid var(--primary);
           padding: 32px;
           border-radius: 20px;
           margin: 48px 0;
@@ -599,7 +599,7 @@ const AFFFoamConcentrate = () => {
         .maintenance-section-enhanced h3 {
           font-size: 1.5rem;
           margin-bottom: 24px;
-          color: #854d0e;
+          color: var(--secondary);
         }
         .maintenance-grid {
           display: grid;
@@ -610,7 +610,7 @@ const AFFFoamConcentrate = () => {
           display: flex;
           align-items: center;
           gap: 12px;
-          background: white;
+          background: var(--white);
           padding: 12px 16px;
           border-radius: 12px;
         }
@@ -624,6 +624,7 @@ const AFFFoamConcentrate = () => {
         .related-products h3 {
           font-size: 1.5rem;
           margin-bottom: 24px;
+          color: var(--secondary);
         }
         .related-grid {
           display: grid;
@@ -631,12 +632,12 @@ const AFFFoamConcentrate = () => {
           gap: 20px;
         }
         .related-card {
-          background: white;
+          background: var(--white);
           border-radius: 16px;
           padding: 16px;
           text-align: center;
           text-decoration: none;
-          color: #1e293b;
+          color: var(--secondary);
           transition: 0.2s;
           box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
@@ -654,8 +655,8 @@ const AFFFoamConcentrate = () => {
           bottom: 0;
           left: 0;
           width: 100%;
-          background: white;
-          box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+          background: var(--white);
+          box-shadow: 0 -5px 20px rgba(0,0,0,0.08);
           transform: translateY(100%);
           transition: transform 0.3s;
           z-index: 1000;
@@ -673,7 +674,7 @@ const AFFFoamConcentrate = () => {
         }
         .sticky-title {
           font-weight: 600;
-          color: #0f172a;
+          color: var(--secondary);
         }
         .sticky-buttons {
           display: flex;
@@ -690,12 +691,12 @@ const AFFFoamConcentrate = () => {
           gap: 8px;
         }
         .btn-sm-primary {
-          background: #dc2626;
-          color: white;
+          background: var(--primary);
+          color: var(--white);
         }
         .btn-sm-outline {
-          border: 1px solid #dc2626;
-          color: #dc2626;
+          border: 1px solid var(--primary);
+          color: var(--primary);
           background: transparent;
         }
         @media (max-width: 768px) {

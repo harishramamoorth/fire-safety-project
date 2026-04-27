@@ -1,6 +1,6 @@
 .projects-section {
   padding: 60px 0;
-  background: #ffffff;
+  background: var(--white);
 }
 
 .projects-grid {
@@ -10,16 +10,16 @@
 }
 
 .project-card {
-  background: #ffffff;
+  background: var(--white);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-hover);
 }
 
 .project-image {
@@ -43,8 +43,8 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  background: #e63946;
-  color: white;
+  background: var(--primary);
+  color: var(--white);
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.75rem;
@@ -57,12 +57,12 @@
 
 .project-info h3 {
   font-size: 1.3rem;
-  color: #1d3557;
+  color: var(--secondary);
   margin-bottom: 8px;
 }
 
 .project-location {
-  color: #6c757d;
+  color: var(--gray);
   font-size: 0.85rem;
   margin-bottom: 12px;
   display: flex;
@@ -71,7 +71,7 @@
 }
 
 .project-description {
-  color: #4a5568;
+  color: var(--gray-dark);
   line-height: 1.6;
   margin-bottom: 15px;
 }
@@ -84,11 +84,11 @@
 }
 
 .feature-badge {
-  background: #f8f9fa;
+  background: var(--light-gray);
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 0.7rem;
-  color: #1d3557;
+  color: var(--secondary);
 }
 
 @media (max-width: 768px) {

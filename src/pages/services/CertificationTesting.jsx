@@ -174,20 +174,20 @@ const CertificationTesting = () => {
         </div>
       </div>
 
-      {/* Embedded CSS */}
+      {/* Embedded CSS – Green & White Theme */}
       <style jsx>{`
         .certification-service-page {
           font-family: 'Poppins', 'Segoe UI', sans-serif;
-          background: #f8fafc;
+          background: var(--white);
         }
 
         .hero-section {
           position: relative;
-          background: linear-gradient(135deg, #0a2b3e 0%, #1a4a6f 100%);
+          background: linear-gradient(135deg, var(--dark) 0%, var(--secondary) 100%);
           min-height: 400px;
           display: flex;
           align-items: center;
-          color: white;
+          color: var(--white);
           margin-bottom: 60px;
           overflow: hidden;
         }
@@ -227,7 +227,7 @@ const CertificationTesting = () => {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          color: #ffd966;
+          color: var(--primary-light);
           text-decoration: none;
           margin-bottom: 30px;
           font-weight: 500;
@@ -235,7 +235,7 @@ const CertificationTesting = () => {
         }
 
         .back-link-light:hover {
-          color: white;
+          color: var(--white);
         }
 
         .hero-icon {
@@ -264,7 +264,7 @@ const CertificationTesting = () => {
         .lead-text {
           font-size: 1.2rem;
           line-height: 1.6;
-          color: #1e293b;
+          color: var(--gray-dark);
           text-align: center;
           max-width: 800px;
           margin: 0 auto 40px;
@@ -274,7 +274,7 @@ const CertificationTesting = () => {
           margin: 40px 0;
           border-radius: 24px;
           overflow: hidden;
-          box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+          box-shadow: 0 20px 40px rgba(0,0,0,0.08);
         }
 
         .main-image {
@@ -296,48 +296,48 @@ const CertificationTesting = () => {
         }
 
         .service-card {
-          background: white;
+          background: var(--white);
           padding: 30px;
           border-radius: 20px;
-          box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+          box-shadow: var(--shadow);
           transition: 0.3s;
           text-align: center;
         }
 
         .service-card:hover {
           transform: translateY(-5px);
-          box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+          box-shadow: var(--shadow-lg);
         }
 
         .service-icon {
           font-size: 2.5rem;
-          color: #e63946;
+          color: var(--primary);
           margin-bottom: 20px;
         }
 
         .service-card h3 {
           font-size: 1.4rem;
           margin-bottom: 15px;
-          color: #0a2b3e;
+          color: var(--secondary);
         }
 
         .service-card p {
-          color: #475569;
+          color: var(--gray);
           line-height: 1.5;
         }
 
         .process-section {
-          background: white;
+          background: var(--white);
           padding: 50px;
           border-radius: 30px;
           margin: 60px 0;
-          box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+          box-shadow: var(--shadow);
         }
 
         .process-section h2 {
           text-align: center;
           font-size: 2rem;
-          color: #0a2b3e;
+          color: var(--secondary);
           margin-bottom: 40px;
         }
 
@@ -355,8 +355,8 @@ const CertificationTesting = () => {
         .step-number {
           width: 50px;
           height: 50px;
-          background: #e63946;
-          color: white;
+          background: var(--primary);
+          color: var(--white);
           font-size: 1.8rem;
           font-weight: bold;
           border-radius: 50%;
@@ -369,26 +369,26 @@ const CertificationTesting = () => {
 
         .step h3 {
           margin-bottom: 15px;
-          color: #1e293b;
+          color: var(--dark);
         }
 
         .step p {
-          color: #475569;
+          color: var(--gray);
           font-size: 0.95rem;
         }
 
         .standards-section {
-          background: #ffffff;
+          background: var(--white);
           border-radius: 24px;
           padding: 40px;
           margin: 50px 0;
-          border: 1px solid #e2e8f0;
+          border: 1px solid var(--gray-light);
         }
 
         .standards-section h2 {
           text-align: center;
           margin-bottom: 30px;
-          color: #0a2b3e;
+          color: var(--secondary);
         }
 
         .standards-grid {
@@ -401,35 +401,35 @@ const CertificationTesting = () => {
           display: flex;
           justify-content: space-between;
           padding: 12px 0;
-          border-bottom: 1px solid #e2e8f0;
+          border-bottom: 1px solid var(--gray-light);
           flex-wrap: wrap;
         }
 
         .standard-label {
           font-weight: 600;
-          color: #1e293b;
+          color: var(--dark);
           flex: 1;
         }
 
         .standard-value {
-          color: #e63946;
+          color: var(--primary);
           font-weight: 500;
           text-align: right;
           flex: 1;
         }
 
         .benefits-section {
-          background: #ffffff;
+          background: var(--white);
           border-radius: 24px;
           padding: 40px;
           margin: 50px 0;
-          border: 1px solid #e2e8f0;
+          border: 1px solid var(--gray-light);
         }
 
         .benefits-section h2 {
           text-align: center;
           margin-bottom: 30px;
-          color: #0a2b3e;
+          color: var(--secondary);
         }
 
         .benefits-grid {
@@ -443,23 +443,23 @@ const CertificationTesting = () => {
           align-items: center;
           gap: 12px;
           padding: 10px;
-          background: #f8fafc;
+          background: var(--light-gray);
           border-radius: 12px;
         }
 
         .benefit-icon {
-          color: #e63946;
+          color: var(--primary);
           font-size: 1.2rem;
           flex-shrink: 0;
         }
 
         .benefit span {
-          color: #1e293b;
+          color: var(--dark);
           font-weight: 500;
         }
 
         .cta-section {
-          background: linear-gradient(135deg, #0a2b3e, #1a4a6f);
+          background: linear-gradient(135deg, var(--secondary) 0%, var(--dark) 100%);
           border-radius: 24px;
           padding: 50px;
           text-align: center;
@@ -468,19 +468,19 @@ const CertificationTesting = () => {
 
         .cta-content h3 {
           font-size: 1.8rem;
-          color: white;
+          color: var(--white);
           margin-bottom: 15px;
         }
 
         .cta-content p {
-          color: #cbd5e1;
+          color: var(--gray-light);
           margin-bottom: 25px;
         }
 
         .btn-large {
           display: inline-block;
-          background: #e63946;
-          color: white;
+          background: var(--primary);
+          color: var(--white);
           padding: 12px 32px;
           border-radius: 40px;
           text-decoration: none;
@@ -489,7 +489,7 @@ const CertificationTesting = () => {
         }
 
         .btn-large:hover {
-          background: #b91c2c;
+          background: var(--primary-dark);
           transform: scale(1.05);
         }
 

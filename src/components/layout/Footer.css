@@ -12,7 +12,39 @@
 }
 
 .footer-col .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-bottom: 20px;
+}
+
+.footer-col .logo-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: var(--white);
+}
+
+.footer-col .logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.footer-col .logo-text span {
+  color: var(--white);
+}
+
+.footer-col .logo-text small {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.6);
 }
 
 .footer-col p {
@@ -25,6 +57,7 @@
   margin-bottom: 20px;
   position: relative;
   padding-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .footer-col h4::after {
@@ -39,6 +72,7 @@
 
 .footer-col ul {
   list-style: none;
+  padding: 0;
 }
 
 .footer-col ul li {
@@ -101,39 +135,4 @@
     grid-template-columns: 1fr;
     gap: 30px;
   }
-}
-.footer-col .logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.footer-col .logo-icon {
-  width: 48px;
-  height: 48px;
-  background: var(--primary);
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 26px;
-  color: var(--white);
-}
-
-.footer-col .logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-  color: var(--white);  /* Make text white */
-}
-
-.footer-col .logo-text span {
-  color: var(--white);  /* Ensure span also white */
-}
-
-.footer-col .logo-text small {
-  font-size: 10px;
-  font-weight: 400;
-  color: rgba(255,255,255,0.6); /* Keep subtext semi-transparent white */
 }

@@ -1,7 +1,7 @@
-/* src/pages/products/ProductPage.css */
+/* src/pages/products/ProductPage.css – green & white theme */
 .product-page {
   padding: 60px 0;
-  background: #ffffff;
+  background: var(--white);
 }
 
 .back-link {
@@ -9,12 +9,14 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 30px;
-  color: #1d3557;
+  color: var(--secondary);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
-.back-link:hover { color: #e63946; }
+.back-link:hover {
+  color: var(--primary);
+}
 
 .product-header {
   text-align: center;
@@ -22,12 +24,12 @@
 }
 .product-header h1 {
   font-size: 2.5rem;
-  color: #1d3557;
+  color: var(--secondary);
   margin-bottom: 10px;
 }
 .product-header p {
   font-size: 1.2rem;
-  color: #6c757d;
+  color: var(--gray);
 }
 
 .product-content-grid {
@@ -38,10 +40,10 @@
 }
 .product-gallery {
   position: relative;
-  background: #f8f9fa;
+  background: var(--light-gray);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow);
 }
 .product-gallery img {
   width: 100%;
@@ -52,8 +54,8 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  background: #e63946;
-  color: white;
+  background: var(--primary);
+  color: var(--white);
   padding: 5px 15px;
   border-radius: 30px;
   font-size: 0.8rem;
@@ -68,14 +70,14 @@
 .product-price {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #e63946;
+  color: var(--primary);
 }
 .product-rating {
-  color: #f4a261;
+  color: #f4a261;   /* keep star color – optional, you can change to var(--accent) if you wish */
   font-size: 1.1rem;
 }
 .product-description {
-  color: #4a5568;
+  color: var(--gray-dark);
   line-height: 1.8;
 }
 .product-specs h3,
@@ -84,9 +86,9 @@
 .certifications h3,
 .maintenance-tips h3 {
   font-size: 1.3rem;
-  color: #1d3557;
+  color: var(--secondary);
   margin: 25px 0 15px;
-  border-left: 4px solid #e63946;
+  border-left: 4px solid var(--primary);
   padding-left: 12px;
 }
 .product-specs ul,
@@ -97,17 +99,17 @@
 .product-specs li,
 .product-features li {
   padding: 8px 0;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid var(--gray-light);
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .product-specs li strong {
   width: 150px;
-  color: #1d3557;
+  color: var(--secondary);
 }
 .product-features li svg {
-  color: #2ecc71;
+  color: var(--primary);
 }
 .product-actions {
   display: flex;
@@ -122,12 +124,12 @@
   margin: 15px 0;
 }
 .applications-grid span {
-  background: #e8f0fe;
+  background: var(--primary-lightest);
   padding: 8px 18px;
   border-radius: 30px;
   font-size: 0.85rem;
   font-weight: 500;
-  color: #1d3557;
+  color: var(--secondary);
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -139,20 +141,20 @@
   margin: 15px 0;
 }
 .cert-badges span {
-  background: #f8f9fa;
-  border: 1px solid #e63946;
+  background: var(--light-gray);
+  border: 1px solid var(--primary);
   padding: 6px 15px;
   border-radius: 30px;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #e63946;
+  color: var(--primary);
 }
 .maintenance-tips {
-  background: #fef2f2;
+  background: var(--primary-lightest);
   padding: 25px;
   border-radius: 20px;
   margin-top: 40px;
-  border-left: 4px solid #e63946;
+  border-left: 4px solid var(--primary);
 }
 .maintenance-tips ul {
   list-style: none;
@@ -164,6 +166,7 @@
   align-items: center;
   gap: 10px;
 }
+
 @media (max-width: 992px) {
   .product-content-grid {
     grid-template-columns: 1fr;

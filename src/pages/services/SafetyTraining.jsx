@@ -153,20 +153,20 @@ const SafetyTraining = () => {
         </div>
       </div>
 
-      {/* Embedded CSS */}
+      {/* Embedded CSS – Green & White Theme */}
       <style jsx>{`
         .training-service-page {
           font-family: 'Poppins', 'Segoe UI', sans-serif;
-          background: #f8fafc;
+          background: var(--white);
         }
 
         .hero-section {
           position: relative;
-          background: linear-gradient(135deg, #0a2b3e 0%, #1a4a6f 100%);
+          background: linear-gradient(135deg, var(--dark) 0%, var(--secondary) 100%);
           min-height: 400px;
           display: flex;
           align-items: center;
-          color: white;
+          color: var(--white);
           margin-bottom: 60px;
           overflow: hidden;
         }
@@ -206,7 +206,7 @@ const SafetyTraining = () => {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          color: #ffd966;
+          color: var(--primary-light);
           text-decoration: none;
           margin-bottom: 30px;
           font-weight: 500;
@@ -214,7 +214,7 @@ const SafetyTraining = () => {
         }
 
         .back-link-light:hover {
-          color: white;
+          color: var(--white);
         }
 
         .hero-icon {
@@ -243,7 +243,7 @@ const SafetyTraining = () => {
         .lead-text {
           font-size: 1.2rem;
           line-height: 1.6;
-          color: #1e293b;
+          color: var(--gray-dark);
           text-align: center;
           max-width: 800px;
           margin: 0 auto 40px;
@@ -253,7 +253,7 @@ const SafetyTraining = () => {
           margin: 40px 0;
           border-radius: 24px;
           overflow: hidden;
-          box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+          box-shadow: 0 20px 40px rgba(0,0,0,0.08);
         }
 
         .main-image {
@@ -275,48 +275,48 @@ const SafetyTraining = () => {
         }
 
         .course-card {
-          background: white;
+          background: var(--white);
           padding: 30px;
           border-radius: 20px;
-          box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+          box-shadow: var(--shadow);
           transition: 0.3s;
           text-align: center;
         }
 
         .course-card:hover {
           transform: translateY(-5px);
-          box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+          box-shadow: var(--shadow-lg);
         }
 
         .course-icon {
           font-size: 2.5rem;
-          color: #e63946;
+          color: var(--primary);
           margin-bottom: 20px;
         }
 
         .course-card h3 {
           font-size: 1.4rem;
           margin-bottom: 15px;
-          color: #0a2b3e;
+          color: var(--secondary);
         }
 
         .course-card p {
-          color: #475569;
+          color: var(--gray);
           line-height: 1.5;
         }
 
         .benefits-section {
-          background: white;
+          background: var(--white);
           padding: 50px;
           border-radius: 24px;
           margin: 50px 0;
           text-align: center;
-          box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+          box-shadow: var(--shadow);
         }
 
         .benefits-section h2 {
           font-size: 2rem;
-          color: #0a2b3e;
+          color: var(--secondary);
           margin-bottom: 30px;
         }
 
@@ -332,33 +332,33 @@ const SafetyTraining = () => {
           align-items: center;
           gap: 12px;
           padding: 10px;
-          background: #f8fafc;
+          background: var(--light-gray);
           border-radius: 12px;
         }
 
         .benefit-icon {
-          color: #e63946;
+          color: var(--primary);
           font-size: 1.2rem;
           flex-shrink: 0;
         }
 
         .benefit span {
-          color: #1e293b;
+          color: var(--dark);
           font-weight: 500;
         }
 
         .audience-section {
-          background: #ffffff;
+          background: var(--white);
           border-radius: 24px;
           padding: 40px;
           margin: 50px 0;
           text-align: center;
-          border: 1px solid #e2e8f0;
+          border: 1px solid var(--gray-light);
         }
 
         .audience-section h2 {
           font-size: 2rem;
-          color: #0a2b3e;
+          color: var(--secondary);
           margin-bottom: 25px;
         }
 
@@ -370,26 +370,26 @@ const SafetyTraining = () => {
         }
 
         .audience-list span {
-          background: #e8f0fe;
+          background: var(--primary-lightest);
           padding: 10px 22px;
           border-radius: 40px;
           font-size: 0.9rem;
           font-weight: 500;
-          color: #1d3557;
+          color: var(--secondary);
         }
 
         .format-section {
-          background: #ffffff;
+          background: var(--white);
           border-radius: 24px;
           padding: 40px;
           margin: 50px 0;
-          border: 1px solid #e2e8f0;
+          border: 1px solid var(--gray-light);
           text-align: center;
         }
 
         .format-section h2 {
           font-size: 2rem;
-          color: #0a2b3e;
+          color: var(--secondary);
           margin-bottom: 30px;
         }
 
@@ -400,29 +400,29 @@ const SafetyTraining = () => {
         }
 
         .format-card {
-          background: #f8fafc;
+          background: var(--light-gray);
           padding: 25px;
           border-radius: 16px;
           transition: 0.3s;
         }
 
         .format-card:hover {
-          background: white;
-          box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+          background: var(--white);
+          box-shadow: var(--shadow);
         }
 
         .format-card h3 {
           font-size: 1.3rem;
-          color: #0a2b3e;
+          color: var(--secondary);
           margin-bottom: 12px;
         }
 
         .format-card p {
-          color: #475569;
+          color: var(--gray);
         }
 
         .cta-section {
-          background: linear-gradient(135deg, #0a2b3e, #1a4a6f);
+          background: linear-gradient(135deg, var(--secondary) 0%, var(--dark) 100%);
           border-radius: 24px;
           padding: 50px;
           text-align: center;
@@ -431,19 +431,19 @@ const SafetyTraining = () => {
 
         .cta-content h3 {
           font-size: 1.8rem;
-          color: white;
+          color: var(--white);
           margin-bottom: 15px;
         }
 
         .cta-content p {
-          color: #cbd5e1;
+          color: var(--gray-light);
           margin-bottom: 25px;
         }
 
         .btn-large {
           display: inline-block;
-          background: #e63946;
-          color: white;
+          background: var(--primary);
+          color: var(--white);
           padding: 12px 32px;
           border-radius: 40px;
           text-decoration: none;
@@ -452,7 +452,7 @@ const SafetyTraining = () => {
         }
 
         .btn-large:hover {
-          background: #b91c2c;
+          background: var(--primary-dark);
           transform: scale(1.05);
         }
 
