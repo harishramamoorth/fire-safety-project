@@ -444,6 +444,7 @@ const FireExtinguishersService = () => {
           .specs-section { padding: 30px; }
           .maintenance-steps h2,
           .specs-section h2 {
+          
             font-size: 1.5rem;
           }
         }
